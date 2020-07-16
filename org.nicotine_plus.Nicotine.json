@@ -91,8 +91,8 @@
       "sources": [
         {
           "url": "https://github.com/nicotine-plus/nicotine-plus.git",
-          "tag": "2.0.0",
-          "commit": "b98790de2b6b900c2450ff43311ee7683497c7db",
+          "tag": "2.0.1",
+          "commit": "5391714b45d3a27991aa080fb0fe138a9d9eedd4",
           "type": "git"
         }
       ],
