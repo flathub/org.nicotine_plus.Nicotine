@@ -29,19 +29,6 @@
   "modules": [
     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
     {
-      "name": "gsound",
-      "sources": [
-        {
-          "url": "https://gitlab.gnome.org/GNOME/gsound.git",
-          "commit": "a86946b494aa32782b3f6334344d07b5c11d5219",
-          "type": "git"
-        }
-      ],
-      "cleanup": [
-        "/bin"
-      ]
-    },
-    {
       "name": "gspell",
       "sources": [
         {
@@ -91,8 +78,7 @@
       "sources": [
         {
           "url": "https://github.com/nicotine-plus/nicotine-plus.git",
-          "tag": "2.0.1",
-          "commit": "5391714b45d3a27991aa080fb0fe138a9d9eedd4",
+          "commit": "cd4a86481592963e27143147ab01f834e92107a7",
           "type": "git"
         }
       ],
