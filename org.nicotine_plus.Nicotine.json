@@ -30,15 +30,16 @@
     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
     {
       "name": "gspell",
+      "cleanup": [
+        "/bin"
+      ],
       "sources": [
         {
           "url": "https://gitlab.gnome.org/GNOME/gspell.git",
-          "sha256": "3522ddd143a0e5a89ac9c35e3d96beeb8cf8e965",
+          "tag": "1.8.3",
+          "commit": "3522ddd143a0e5a89ac9c35e3d96beeb8cf8e965",
           "type": "git"
         }
-      ],
-      "cleanup": [
-        "/bin"
       ]
     },
     {
@@ -56,20 +57,41 @@
       ]
     },
     {
-      "name": "python3-mutagen",
-      "buildsystem": "simple",
+      "name": "taglib",
+      "buildsystem": "cmake-ninja",
+      "config-opts": [
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "cleanup": [
+        "/bin",
+        "/include",
+        "/lib/*.so"
+      ],
       "sources": [
         {
-          "url": "https://files.pythonhosted.org/packages/49/d7/245d48972216d000238d6ccc09142bc1be88e707b38e8fb19a0155292cb6/mutagen-1.44.0-py3-none-any.whl",
-          "sha256": "1cfc9f40cc0c89f051e3f3dbd5d9057a193c98433cf6c95e02d7f5a395615c01",
-          "type": "file"
+          "url": "https://github.com/taglib/taglib.git",
+          "tag": "v1.11.1",
+          "commit": "e36a9cabb9882e61276161c23834d966d62073b7",
+          "type": "git"
+        }
+      ]
+    },
+    {
+      "name": "python3-taglib",
+      "buildsystem": "simple",
+      "cleanup": [
+        "/bin"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/supermihi/pytaglib.git",
+          "tag": "v1.4.6",
+          "commit": "3537b57761c4c8dfa8ce8a33d8c995b20582bfa4",
+          "type": "git"
         }
       ],
       "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=\"${FLATPAK_DEST}\" mutagen"
-      ],
-      "cleanup": [
-        "/bin"
+        "python3 setup.py install --prefix=\"${FLATPAK_DEST}\""
       ]
     },
     {
@@ -78,7 +100,7 @@
       "sources": [
         {
           "url": "https://github.com/nicotine-plus/nicotine-plus.git",
-          "commit": "195023a21597f57b9c8a527caa0cac74e6a8c8b7",
+          "commit": "1ef6d85a23181e38be5dbcfc6512cbc5d1dac5a7",
           "type": "git"
         }
       ],
