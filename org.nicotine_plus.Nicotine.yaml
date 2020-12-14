@@ -42,8 +42,8 @@ modules:
     buildsystem: simple
     sources:
       - url: https://github.com/nicotine-plus/nicotine-plus.git
-        tag: 2.2.0
-        commit: 9d33e002a0c9157fad7701a9b4116ed3bafdcacb
+        tag: 2.2.1
+        commit: ea15887400e2926940e13aa155d1e907b122f465
         type: git
     build-commands:
       - python3 setup.py install --prefix="${FLATPAK_DEST}"
