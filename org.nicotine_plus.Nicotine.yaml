@@ -14,6 +14,9 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
 
+  # Now Playing (MPRIS)
+  - --talk-name=org.mpris.MediaPlayer2.*
+
 cleanup:
   - /etc
   - /include
@@ -121,8 +124,8 @@ modules:
     buildsystem: simple
     sources:
       - url: https://github.com/nicotine-plus/nicotine-plus.git
-        tag: 3.0.0
-        commit: 1b1413b839cb843f08eb32530e64021eff73f812
+        tag: 3.0.1
+        commit: d818a108439b17ad2b589ac47a1c86a716e4864f
         type: git
     build-commands:
-      - python3 setup.py install --prefix="${FLATPAK_DEST}"
+      - pip3 install . --no-deps --prefix="${FLATPAK_DEST}"
