@@ -147,8 +147,11 @@ modules:
   - name: nicotine+
     buildsystem: simple
     sources:
-      - url: https://github.com/Nicotine-Plus/nicotine-plus/archive/refs/tags/3.0.6.tar.gz
-        sha256: 7ff5a256eb428037b2706bd87918fda509a36aa994cd157861acfdaaf140a6a2
+      - url: https://files.pythonhosted.org/packages/7b/15/a2bd4586013d77252ae354c8e6ec08464801c717255a0d3a7b3dff79f786/nicotine-plus-3.0.6.tar.gz
+        sha256: 06c6456c71943b35b3b23d3d958ab8c34e6471da0e46a615ba53dfb4db2a408c
         type: archive
+        x-checker-data:
+          type: pypi
+          name: nicotine-plus
     build-commands:
       - pip3 install . --prefix="${FLATPAK_DEST}"
