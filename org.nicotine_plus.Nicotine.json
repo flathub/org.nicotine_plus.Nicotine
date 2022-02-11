@@ -180,8 +180,8 @@
             "buildsystem": "simple",
             "sources": [
                 {
-                    "url": "https://files.pythonhosted.org/packages/fa/85/cb0ecfce7b529446104cb29a7bfe78a2d0efa124444fbc591c6a5193a824/nicotine-plus-3.2.1.tar.gz",
-                    "sha256": "a2835bdce9054afc727e554e02585d34f153ba1d5fae9f883758212b089a8539",
+                    "url": "https://files.pythonhosted.org/packages/71/0b/a15b017e92f669e19147ac1b729f5d1610cfa9caadf9f784b7de98502729/nicotine-plus-3.2.1.post1.tar.gz",
+                    "sha256": "da6ac3eaba9826bcd60e39bae728c4703556d058d2e884d7b9330882fce7730b",
                     "type": "archive",
                     "x-checker-data": {
                         "type": "pypi",
