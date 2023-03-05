@@ -35,8 +35,8 @@
             ],
             "sources": [
                 {
-                    "url": "https://download.gnome.org/sources/gspell/1.10/gspell-1.10.0.tar.xz",
-                    "sha256": "803bb884c0215d3fd22a85d7f30423aff88d9792f05a5199d8a489a2ffaae1da",
+                    "url": "https://download.gnome.org/sources/gspell/1.12/gspell-1.12.0.tar.xz",
+                    "sha256": "40d2850f1bb6e8775246fa1e39438b36caafbdbada1d28a19fa1ca07e1ff82ad",
                     "type": "archive"
                 }
             ]
@@ -49,8 +49,8 @@
             ],
             "sources": [
                 {
-                    "url": "https://files.pythonhosted.org/packages/33/42/09d44ca8a6ee8eb9982e6e289bcc4523cbd8f2290decc3a07655c1a22bfd/nicotine-plus-3.2.8.tar.gz",
-                    "sha256": "48e1bcda9483f3d2228f8c4ff6fe68f1b61898c354d54b1358726997b926b283",
+                    "url": "https://files.pythonhosted.org/packages/70/d5/15d8c60e3d27d3482fb8cba3ae0c49e57efe00f28e51b8aaea09f979bc48/nicotine-plus-3.2.9.tar.gz",
+                    "sha256": "41a86dc68b175d1dcac2ec2d79553cff4e5fbcca7f9f384c51cbaa393081b0c0",
                     "type": "archive",
                     "x-checker-data": {
                         "type": "pypi",
