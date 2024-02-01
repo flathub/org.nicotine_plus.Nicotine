@@ -1,10 +1,10 @@
 {
-    "app-id": "org.nicotine_plus.Nicotine",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
-    "sdk": "org.gnome.Sdk",
-    "command": "nicotine",
-    "finish-args": [
+    "id" : "org.nicotine_plus.Nicotine",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "45",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "nicotine",
+    "finish-args" : [
         "--socket=wayland",
         "--socket=fallback-x11",
         "--share=ipc",
@@ -18,45 +18,21 @@
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=org.mpris.MediaPlayer2.*"
     ],
-    "modules": [
+    "modules" : [
         {
-            "name": "gspell",
-            "config-opts": [
-                "--disable-gtk-doc",
-                "--disable-static",
-                "--disable-vala",
-                "--disable-valgrind"
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/debug",
-                "/lib/pkgconfig",
-                "/lib/*.la",
-                "/share/gtk-doc"
-            ],
-            "sources": [
-                {
-                    "url": "https://download.gnome.org/sources/gspell/1.12/gspell-1.12.0.tar.xz",
-                    "sha256": "40d2850f1bb6e8775246fa1e39438b36caafbdbada1d28a19fa1ca07e1ff82ad",
-                    "type": "archive"
-                }
-            ]
-        },
-        {
-            "name": "nicotine-plus",
-            "buildsystem": "simple",
-            "build-commands": [
+            "name" : "nicotine-plus",
+            "buildsystem" : "simple",
+            "build-commands" : [
                 "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} . --no-build-isolation"
             ],
-            "sources": [
+            "sources" : [
                 {
-                    "url": "https://files.pythonhosted.org/packages/70/d5/15d8c60e3d27d3482fb8cba3ae0c49e57efe00f28e51b8aaea09f979bc48/nicotine-plus-3.2.9.tar.gz",
-                    "sha256": "41a86dc68b175d1dcac2ec2d79553cff4e5fbcca7f9f384c51cbaa393081b0c0",
-                    "type": "archive",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "nicotine-plus"
+                    "url" : "https://files.pythonhosted.org/packages/63/af/edce08a25dce9154a08f3f758a90c5a659d05cc790d073516924cc86fd7e/nicotine-plus-3.3.0.tar.gz",
+                    "sha256" : "068a37cee2c0be575626ce8d88ded8f58cd7ac27841262d1369ca44771ca9c38",
+                    "type" : "archive",
+                    "x-checker-data" : {
+                        "type" : "pypi",
+                        "name" : "nicotine-plus"
                     }
                 }
             ]
