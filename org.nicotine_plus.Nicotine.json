@@ -26,6 +26,13 @@
             "build-commands": [
                 "pip3 install --no-build-isolation --no-deps --prefix=${FLATPAK_DEST} ."
             ],
+            "post-install": [
+                "for size in 16x16 16x16@2 24x24 24x24@2 32x32 32x32@2 48x48 48x48@2 64x64 64x64@2 128x128 128x128@2 256x256 256x256@2; do
+                    rsvg-convert -f png -o $size.png ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.svg
+                    install -Dm644 $size.png ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.png
+                    rm ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.svg
+                done"
+            ],
             "sources": [
                 {
                     "url": "https://files.pythonhosted.org/packages/0e/73/ba597ab69a24106e0ba44eef0346116f37842b8273d357a46ad2d05cc729/nicotine_plus-3.3.5.tar.gz",
