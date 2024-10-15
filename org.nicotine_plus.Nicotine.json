@@ -27,16 +27,12 @@
                 "pip3 install --no-build-isolation --no-deps --prefix=${FLATPAK_DEST} ."
             ],
             "post-install": [
-                "for size in 16x16 16x16@2 24x24 24x24@2 32x32 32x32@2 48x48 48x48@2 64x64 64x64@2 128x128 128x128@2 256x256 256x256@2; do
-                    rsvg-convert -f png -o $size.png ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.svg
-                    install -Dm644 $size.png ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.png
-                    rm ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.svg
-                done"
+                "for size in 16x16 16x16@2 24x24 24x24@2 32x32 32x32@2 48x48 48x48@2 64x64 64x64@2 128x128 128x128@2 256x256 256x256@2; do\n                    rsvg-convert -f png -o $size.png ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.svg\n                    install -Dm644 $size.png ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.png\n                    rm ${FLATPAK_DEST}/share/icons/hicolor/${size}/apps/${FLATPAK_ID}.svg\n                done"
             ],
             "sources": [
                 {
-                    "url": "https://files.pythonhosted.org/packages/0e/73/ba597ab69a24106e0ba44eef0346116f37842b8273d357a46ad2d05cc729/nicotine_plus-3.3.5.tar.gz",
-                    "sha256": "e0c9d650606a9f9eab8e5c2b7fd560ddb5cfe475ea4c22f19b833d7ebf86ba43",
+                    "url": "https://files.pythonhosted.org/packages/5a/d3/a489967ab67165a6893f23e03c5134cf1b9cd35fd826c0a7c9ea3c743cb9/nicotine_plus-3.3.6.tar.gz",
+                    "sha256": "6a0b39c5ff4fb4768689516a3a2cfe3aafdc568b5237f19553c51b1de712ee66",
                     "type": "archive",
                     "x-checker-data": {
                         "type": "pypi",
