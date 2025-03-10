@@ -28,8 +28,8 @@
             ],
             "sources": [
                 {
-                    "url": "https://files.pythonhosted.org/packages/02/a6/2797643ecf57f66c7d926dca073a249490bdcf21e7d9317d7bdcdcd95f88/nicotine_plus-3.3.8.tar.gz",
-                    "sha256": "c2e85a155088d9fab55be22597849df855767360276b9c5671155f9845de6207",
+                    "url": "https://files.pythonhosted.org/packages/3b/dc/f6bdc9a96c9cf5a8e23e3e17ab5b9ba12d06d774e1c661e4b7e7146af32e/nicotine_plus-3.3.9.tar.gz",
+                    "sha256": "87c9a9e4c818ea199d7282bbddea6f5831c73bcc103da5b351a69b18b039fa58",
                     "type": "archive",
                     "x-checker-data": {
                         "type": "pypi",
