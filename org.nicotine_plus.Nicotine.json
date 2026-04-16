@@ -19,6 +19,12 @@
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=org.mpris.MediaPlayer2.*"
     ],
+    "cleanup": [
+        "/share/man"
+    ],
+    "cleanup-commands": [
+        "python3 -m compileall --invalidation-mode=unchecked-hash /app"
+    ],
     "modules": [
         {
             "name": "nicotine-plus",
